@@ -153,7 +153,7 @@ def plot_significance(list_1,list_2,x1,x2,y,y_offset,fontsize,linewidth):
         plt.text((x1+x2)/2,y+y_offset,'****',fontsize=fontsize,horizontalalignment='center')
     return
                    
-def basic_box_plot(data_list,x_labels,colors,size_x,size_y,y_lim,y_label='Frequency',has_jitter=True):
+def basic_box_plot(data_list,x_labels,colors,size_x,size_y,y_lim,y_label='Frequency',has_jitter=True,save=''):
     num_cohort = len(data_list)
     num_x_val = len(data_list[0])
     bias = 1/(num_cohort+1)
@@ -198,5 +198,6 @@ def basic_box_plot(data_list,x_labels,colors,size_x,size_y,y_lim,y_label='Freque
     plt.xlabel('Isotype',font='serif',fontsize = 24,fontweight='bold')
     #plt.title('Mutation count',font='serif',fontsize = 48,fontweight='bold')
     plt.tight_layout()
-    #plt.savefig(work_dir+'figures/in-house_DB_divergence_box_and_violin.png')
+    if save != '':
+      plt.savefig(save)
     plt.show()
