@@ -37,4 +37,4 @@ def main(workdir_list):
                x_labels=['M','D','G3','G1','A1','G2','G4','A2','All'],colors = ['b','r','g','orange','purple','brown'],
                size_x=12,size_y=8,y_lim=50.0,y_label='Somatic mutation',has_jitter=True,save=workdir_list[-1]+'Mutation.png')
 
-main(list(sys.argv))
+main(list(sys.argv)[1:])
