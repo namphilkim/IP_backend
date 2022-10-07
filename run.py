@@ -21,7 +21,7 @@ def main(workdir_list):
     VJ_dict_list.append([])
     V_dict_list.append([])
     J_dict_list.append([])
-    isotype_list[-1], gini_list[-1], shm_list[-1], VJ_dict[-1], V_dict[-1], J_dict[-1] = iplib.get_repertoire(workdir_list[i],isotype_dict)
+    isotype_list[-1], gini_list[-1], shm_list[-1], VJ_dict_list[-1], V_dict_list[-1], J_dict_list[-1] = iplib.get_repertoire(workdir_list[i],isotype_dict)
 
   print("--- %s seconds ---" % (time.time() - start_time))
   
