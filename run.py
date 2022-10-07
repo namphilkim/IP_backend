@@ -7,7 +7,7 @@ def main(workdir_list):
   n = len(workdir_list) - 1
   isotype_dict = {'IGHM':0,'IGHD':1,'IGHG3':2,'IGHG1':3,'IGHA1':4,'IGHG2':5,'IGHG4':6,'IGHA2':7}
 
-  isotpye_list = []
+  isotype_list = []
   gini_list = []
   shm_list = []
   VJ_dict_list = []
@@ -15,7 +15,7 @@ def main(workdir_list):
   J_dict_list = []
   
   for i in range(n):
-    isotpye_list.append([])
+    isotype_list.append([])
     gini_list.append([])
     shm_list.append([])
     VJ_dict_list.append([])
